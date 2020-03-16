@@ -1,0 +1,30 @@
+{
+    "name": "学在浙大下载器",
+    "version": "0.1",
+    "description": "大佬读代码勿笑小生，也欢迎联系提修改建议",
+    "background": {
+        "scripts": ["background.js"]
+      },
+
+    "permissions":[
+      "storage",
+      "declarativeContent",
+      "activeTab",
+      "downloads",
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>"
+    ],
+    
+    
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon":{
+          "50":"images/cat.png"
+        }
+    },
+    "icons":{
+        "50":"images/cat.png"
+    },
+    "manifest_version": 2
+  }
