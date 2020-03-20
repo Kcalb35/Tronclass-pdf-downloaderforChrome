@@ -1,6 +1,6 @@
 {
     "name": "学在浙大下载器",
-    "version": "0.1",
+    "version": "0.2",
     "description": "大佬读代码勿笑小生，也欢迎联系提修改建议",
     "background": {
         "scripts": ["background.js"]

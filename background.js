@@ -10,7 +10,8 @@ chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
 
 chrome.webRequest.onBeforeRequest.addListener(
     function(details){
+        console.log(details.url);
         chrome.storage.sync.set({url:details.url});
         },
-    {urls:["http://courses.zju.edu.cn:8060/api/uploads/reference/document/*"]}
+    {urls:["https://courses.zju.edu.cn/api/uploads/reference/document/*"]}
 );

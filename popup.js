@@ -11,6 +11,7 @@ function download(){
 
 btn.onclick = function(element){
     chrome.storage.sync.get('url',function(data){
+        console.log(data.url);
         Http.addEventListener("load",download);
         Http.open("GET",data.url);
         Http.send();
